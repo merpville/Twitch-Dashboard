@@ -3,7 +3,7 @@
         $config = parse_ini_file("config.ini", true);
         $url = str_replace("{user}", $config["auth"]["username"], $config["endpoints"]["GET_followers"]);
         $client_id = $config["auth"]["client_id"];
-        $limit = 8;
+        $limit = 4;
 
         $curl = curl_init();
         curl_setopt_array($curl, array(
